@@ -162,4 +162,3 @@ scrape_configs:
         site: Prod
         instance: FlashArray2
         env: 'Prod'
- 
