@@ -22,21 +22,6 @@ services:
     ports:
       - 9090:9090
     restart: on-failure
-  grafana:
-    image: grafana/grafana:latest
-    environment:
-      - GF_SECURITY_ADMIN_USER=admin
-      - GF_SECURITY_ADMIN_PASSWORD=admin!
-    depends_on: 
-      - pure-fa-om-exporter
-      - prometheus
-    ports:
-      - 3000:3000
-    volumes:
-      - grafana-data:/var/lib/grafana
-      - ./grafana/datasources:/etc/grafana/provisioning/datasources
-      - ./grafana/dashboards:/etc/grafana/provisioning/dashboards
-    restart: on-failure
 volumes:
   prometheus-data:
   grafana-data:
