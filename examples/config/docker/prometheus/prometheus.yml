@@ -5,161 +5,161 @@ scrape_configs:
   - job_name: 'purestorage-fa'
     metrics_path: /metrics/array
     authorization:
-      credentials: <YOUR_API_TOKEN>
+      credentials: 2f316e6a-b326-1bcd-3b7a-bc4e7f1499c7
     params:
-      endpoint: [<YOUR_FLASHARRAY_IP>]
+      endpoint: [192.168.0.16]
 
     static_configs:
     - targets:
       - pure-fa-om-exporter:9490
       labels:
         location: US
-        site: TestSite
+        site: Prod
         instance: FlashArray1
-        env: 'Test Lab'
+        env: 'Prod'
 
   - job_name: 'purestorage-fa_volumes'
     metrics_path: /metrics/volumes
     authorization:
-      credentials: <YOUR_API_TOKEN>
+      credentials: 2f316e6a-b326-1bcd-3b7a-bc4e7f1499c7
     params:
-      endpoint: [<YOUR_FLASHARRAY_IP>]
+      endpoint: [192.168.0.16]
 
     static_configs:
     - targets:
       - pure-fa-om-exporter:9490
       labels:
         location: US
-        site: TestSite
+        site: Prod
         instance: FlashArray1
-        env: 'Test Lab'
+        env: 'Prod'
 
   - job_name: 'purestorage-fa_hosts'
     metrics_path: /metrics/hosts
     authorization:
-      credentials: <YOUR_API_TOKEN>
+      credentials: 2f316e6a-b326-1bcd-3b7a-bc4e7f1499c7
     params:
-      endpoint: [<YOUR_FLASHARRAY_IP>]
+      endpoint: [192.168.0.16]
 
     static_configs:
     - targets:
       - pure-fa-om-exporter:9490
       labels:
         location: US
-        site: TestSite
+        site: Prod
         instance: FlashArray1
-        env: 'Test Lab'
+        env: 'Prod'
         
   - job_name: 'purestorage-fa_pods'
     metrics_path: /metrics/pods
     authorization:
-      credentials: <YOUR_API_TOKEN>
+      credentials: 2f316e6a-b326-1bcd-3b7a-bc4e7f1499c7
     params:
-      endpoint: [<YOUR_FLASHARRAY_IP>]
+      endpoint: [192.168.0.16]
 
     static_configs:
     - targets:
       - pure-fa-om-exporter:9490
       labels:
         location: US
-        site: TestSite
+        site: Prod
         instance: FlashArray1
-        env: 'Test Lab'
+        env: 'Prod'
  
   - job_name: 'purestorage-fa_directories'
     metrics_path: /metrics/directories
     authorization:
-      credentials: <YOUR_API_TOKEN>
+      credentials: 2f316e6a-b326-1bcd-3b7a-bc4e7f1499c7
     params:
-      endpoint: [<YOUR_FLASHARRAY_IP>]
+      endpoint: [192.168.0.16]
 
     static_configs:
     - targets:
       - pure-fa-om-exporter:9490
       labels:
         location: US
-        site: TestSite
+        site: Prod
         instance: FlashArray1
-        env: 'Test Lab'
+        env: 'Prod'
  
 
   - job_name: 'purestorage-fa2'
     metrics_path: /metrics/array
     authorization:
-      credentials: <YOUR_API_TOKEN>
+      credentials: 2f316e6a-b326-1bcd-3b7a-bc4e7f1499c7
     params:
-      endpoint: [<YOUR_FLASHARRAY_IP>]
+      endpoint: [192.168.0.16]
 
     static_configs:
     - targets:
       - pure-fa-om-exporter:9490
       labels:
         location: US
-        site: TestSite
+        site: Prod
         instance: FlashArray2
-        env: 'Test Lab'
+        env: 'Prod'
 
   - job_name: 'purestorage-fa2_volumes'
     metrics_path: /metrics/volumes
     authorization:
-      credentials: <YOUR_API_TOKEN>
+      credentials: 2f316e6a-b326-1bcd-3b7a-bc4e7f1499c7
     params:
-      endpoint: [<YOUR_FLASHARRAY_IP>]
+      endpoint: [192.168.0.16]
 
     static_configs:
     - targets:
       - pure-fa-om-exporter:9490
       labels:
         location: US
-        site: TestSite
+        site: Prod
         instance: FlashArray2
-        env: 'Test Lab'
+        env: 'Prod'
 
   - job_name: 'purestorage-fa2_hosts'
     metrics_path: /metrics/hosts
     authorization:
-      credentials: <YOUR_API_TOKEN>
+      credentials: 2f316e6a-b326-1bcd-3b7a-bc4e7f1499c7
     params:
-      endpoint: [<YOUR_FLASHARRAY_IP>]
+      endpoint: [192.168.0.16]
 
     static_configs:
     - targets:
       - pure-fa-om-exporter:9490
       labels:
         location: US
-        site: TestSite
+        site: Prod
         instance: FlashArray2
-        env: 'Test Lab'
+        env: 'Prod'
         
   - job_name: 'purestorage-fa2_pods'
     metrics_path: /metrics/pods
     authorization:
-      credentials: <YOUR_API_TOKEN>
+      credentials: 2f316e6a-b326-1bcd-3b7a-bc4e7f1499c7
     params:
-      endpoint: [<YOUR_FLASHARRAY_IP>]
+      endpoint: [192.168.0.16]
 
     static_configs:
     - targets:
       - pure-fa-om-exporter:9490
       labels:
         location: US
-        site: TestSite
+        site: Prod
         instance: FlashArray2
-        env: 'Test Lab'
+        env: 'Prod'
  
   - job_name: 'purestorage-fa2_directories'
     metrics_path: /metrics/directories
     authorization:
-      credentials: <YOUR_API_TOKEN>
+      credentials: 2f316e6a-b326-1bcd-3b7a-bc4e7f1499c7
     params:
-      endpoint: [<YOUR_FLASHARRAY_IP>]
+      endpoint: [192.168.0.16]
 
     static_configs:
     - targets:
       - pure-fa-om-exporter:9490
       labels:
         location: US
-        site: TestSite
+        site: Prod
         instance: FlashArray2
-        env: 'Test Lab'
+        env: 'Prod'
  
